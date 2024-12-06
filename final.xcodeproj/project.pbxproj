@@ -6,12 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DE7B94212D018641003CAB4E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DE7B94202D018641003CAB4E /* SDWebImage */; };
+		DE7B94242D0187A0003CAB4E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DE7B94232D0187A0003CAB4E /* FirebaseAuth */; };
+		DE7B94262D0187A0003CAB4E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DE7B94252D0187A0003CAB4E /* FirebaseDatabase */; };
+		DE7B94282D0187A0003CAB4E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DE7B94272D0187A0003CAB4E /* FirebaseFirestore */; };
+		DE7B942A2D0187A0003CAB4E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DE7B94292D0187A0003CAB4E /* FirebaseStorage */; };
+		DE7B942D2D0187ED003CAB4E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE7B942C2D0187ED003CAB4E /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DE7B93BA2D017B04003CAB4E /* final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DE7B93CC2D017B06003CAB4E /* Exceptions for "final" folder in "final" target */ = {
+		DE7B94342D01E9FF003CAB4E /* Exceptions for "final" folder in "final" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +33,7 @@
 		DE7B93BC2D017B04003CAB4E /* final */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				DE7B93CC2D017B06003CAB4E /* Exceptions for "final" folder in "final" target */,
+				DE7B94342D01E9FF003CAB4E /* Exceptions for "final" folder in "final" target */,
 			);
 			path = final;
 			sourceTree = "<group>";
@@ -36,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7B94262D0187A0003CAB4E /* FirebaseDatabase in Frameworks */,
+				DE7B94282D0187A0003CAB4E /* FirebaseFirestore in Frameworks */,
+				DE7B94212D018641003CAB4E /* SDWebImage in Frameworks */,
+				DE7B942D2D0187ED003CAB4E /* Alamofire in Frameworks */,
+				DE7B942A2D0187A0003CAB4E /* FirebaseStorage in Frameworks */,
+				DE7B94242D0187A0003CAB4E /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,12 @@
 			);
 			name = final;
 			packageProductDependencies = (
+				DE7B94202D018641003CAB4E /* SDWebImage */,
+				DE7B94232D0187A0003CAB4E /* FirebaseAuth */,
+				DE7B94252D0187A0003CAB4E /* FirebaseDatabase */,
+				DE7B94272D0187A0003CAB4E /* FirebaseFirestore */,
+				DE7B94292D0187A0003CAB4E /* FirebaseStorage */,
+				DE7B942C2D0187ED003CAB4E /* Alamofire */,
 			);
 			productName = final;
 			productReference = DE7B93BA2D017B04003CAB4E /* final.app */;
@@ -107,6 +128,11 @@
 			);
 			mainGroup = DE7B93B12D017B04003CAB4E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DE7B941F2D018641003CAB4E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				DE7B94222D0187A0003CAB4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DE7B942B2D0187ED003CAB4E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DE7B93BB2D017B04003CAB4E /* Products */;
 			projectDirPath = "";
@@ -335,6 +361,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE7B941F2D018641003CAB4E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+		DE7B94222D0187A0003CAB4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+		DE7B942B2D0187ED003CAB4E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE7B94202D018641003CAB4E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE7B941F2D018641003CAB4E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		DE7B94232D0187A0003CAB4E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE7B94222D0187A0003CAB4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DE7B94252D0187A0003CAB4E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE7B94222D0187A0003CAB4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		DE7B94272D0187A0003CAB4E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE7B94222D0187A0003CAB4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DE7B94292D0187A0003CAB4E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE7B94222D0187A0003CAB4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		DE7B942C2D0187ED003CAB4E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE7B942B2D0187ED003CAB4E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE7B93B22D017B04003CAB4E /* Project object */;
 }
